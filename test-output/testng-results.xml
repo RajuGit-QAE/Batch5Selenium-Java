@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="3" passed="2" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-03-25T08:28:04 IST" name="RajaSuite" finished-at="2024-03-25T08:30:26 IST" duration-ms="142231">
+    <groups>
+    </groups>
+    <test started-at="2024-03-25T08:28:04 IST" name="RajaTest" finished-at="2024-03-25T08:30:26 IST" duration-ms="142231">
+      <class name="alltests.EndtoEndTest">
+        <test-method is-config="true" signature="launchapplication()[pri:0, instance:alltests.EndtoEndTest@558bdf1f]" started-at="2024-03-25T08:28:04 IST" name="launchapplication" finished-at="2024-03-25T08:28:20 IST" duration-ms="15688" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchapplication -->
+        <test-method signature="fullTest()[pri:0, instance:alltests.EndtoEndTest@558bdf1f]" started-at="2024-03-25T08:28:20 IST" name="fullTest" finished-at="2024-03-25T08:28:50 IST" duration-ms="30561" status="FAIL">
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+            <message>
+              <![CDATA[element click intercepted: Element <span class="hidden-xs hidden-sm hidden-md">...</span> is not clickable at point (276, 678). Other element would receive the click: <img src="https://naveenautomationlabs.com/opencart/image/cache/catalog/demo/banners/iPhone6-1140x380.jpg" alt="iPhone 6" class="img-responsive">
+  (Session info: chrome=123.0.6312.59)
+Build info: version: '4.16.1', revision: '9b4c83354e'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [26d1defa88917c3a016eee8c101a6d11, clickElement {id=f.D672A51A56D0899EA6F66D932D72EE41.d.AC3488E911CCCF02ABB5854EFB43FCB0.e.115}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 123.0.6312.59, chrome: {chromedriverVersion: 123.0.6312.58 (6b4b19e9dfbb..., userDataDir: C:\Users\ADMIN\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54101}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54101/devtoo..., se:cdpVersion: 123.0.6312.59, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (26d1defa88917c3a016eee8c101a6d11)] -> xpath: //div[@class='product-layout col-lg-3 col-md-3 col-sm-6 col-xs-12']/div/div/button/span]
+Session ID: 26d1defa88917c3a016eee8c101a6d11]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <span class="hidden-xs hidden-sm hidden-md">...</span> is not clickable at point (276, 678). Other element would receive the click: <img src="https://naveenautomationlabs.com/opencart/image/cache/catalog/demo/banners/iPhone6-1140x380.jpg" alt="iPhone 6" class="img-responsive">
+  (Session info: chrome=123.0.6312.59)
+Build info: version: '4.16.1', revision: '9b4c83354e'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [26d1defa88917c3a016eee8c101a6d11, clickElement {id=f.D672A51A56D0899EA6F66D932D72EE41.d.AC3488E911CCCF02ABB5854EFB43FCB0.e.115}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 123.0.6312.59, chrome: {chromedriverVersion: 123.0.6312.58 (6b4b19e9dfbb..., userDataDir: C:\Users\ADMIN\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54101}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54101/devtoo..., se:cdpVersion: 123.0.6312.59, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (26d1defa88917c3a016eee8c101a6d11)] -> xpath: //div[@class='product-layout col-lg-3 col-md-3 col-sm-6 col-xs-12']/div/div/button/span]
+Session ID: 26d1defa88917c3a016eee8c101a6d11
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:523)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+at objectrepository.AddtoCart.productselectionmethod(AddtoCart.java:63)
+at alltests.EndtoEndTest.fullTest(EndtoEndTest.java:44)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fullTest -->
+        <test-method is-config="true" signature="endTest()[pri:0, instance:alltests.EndtoEndTest@558bdf1f]" started-at="2024-03-25T08:28:51 IST" name="endTest" finished-at="2024-03-25T08:28:51 IST" duration-ms="600" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endTest -->
+        <test-method is-config="true" signature="launchapplication()[pri:0, instance:alltests.EndtoEndTest@558bdf1f]" started-at="2024-03-25T08:28:51 IST" name="launchapplication" finished-at="2024-03-25T08:29:03 IST" duration-ms="11708" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchapplication -->
+        <test-method signature="secondTest()[pri:0, instance:alltests.EndtoEndTest@558bdf1f]" started-at="2024-03-25T08:29:03 IST" name="secondTest" finished-at="2024-03-25T08:29:29 IST" duration-ms="26187" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- secondTest -->
+        <test-method is-config="true" signature="endTest()[pri:0, instance:alltests.EndtoEndTest@558bdf1f]" started-at="2024-03-25T08:29:29 IST" name="endTest" finished-at="2024-03-25T08:29:30 IST" duration-ms="1102" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endTest -->
+        <test-method is-config="true" signature="launchapplication()[pri:0, instance:alltests.EndtoEndTest@558bdf1f]" started-at="2024-03-25T08:29:30 IST" name="launchapplication" finished-at="2024-03-25T08:29:48 IST" duration-ms="17751" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchapplication -->
+        <test-method signature="thirdTest()[pri:0, instance:alltests.EndtoEndTest@558bdf1f]" started-at="2024-03-25T08:29:48 IST" name="thirdTest" finished-at="2024-03-25T08:30:21 IST" duration-ms="32509" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- thirdTest -->
+        <test-method is-config="true" signature="endTest()[pri:0, instance:alltests.EndtoEndTest@558bdf1f]" started-at="2024-03-25T08:30:21 IST" name="endTest" finished-at="2024-03-25T08:30:26 IST" duration-ms="5353" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endTest -->
+      </class> <!-- alltests.EndtoEndTest -->
+    </test> <!-- RajaTest -->
+  </suite> <!-- RajaSuite -->
+</testng-results>
